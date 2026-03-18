@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ .rules {
+  font-size: 16px;
+  color: #0f0;
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 8px 16px;
+  background: #16213e;
+  border: 2px solid #0f0;
+  border-radius: 8px;
+}
+
+body {
+  background: #1a1a2e;
+  color: white;
+  font-family: Arial;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.game {
+  width: 1200px;
+  max-width: 100%;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.character-card {
+  width: 300px;
+  background: #16213e;
+  border: 3px solid #0f0;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.character-card.magician {
+  border-color: #4facfe;
+}
+
+.character-card.daemon {
+  border-color: #fe4f4f;
+}
+
+.character-card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.magician h2 {
+  color: #4facfe;
+}
+
+.daemon h2 {
+  color: #fe4f4f;
+}
+
+.stat {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+  padding: 10px;
+  background: #0f3460;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.attack-value {
+  color: #ff0;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.calc {
+  background: #0f3460;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 15px 0;
+}
+
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 80px);
+  grid-template-rows: repeat(5, 80px);
+  gap: 8px;
+  background: #16213e;
+  padding: 20px;
+  border: 3px solid #0f0;
+  border-radius: 15px;
+}
+
+.cell {
+  background: #0f3460;
+  border: 2px solid #0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+
+.cell:hover {
+  transform: scale(1.05);
+  background: #1e2a4a;
+}
+
+.cell.magician {
+  background: #4facfe;
+}
+
+.cell.daemon {
+  background: #fe4f4f;
+}
+
+.distance-info {
+  font-size: 18px;
+  padding: 10px 20px;
+  background: #16213e;
+  border: 2px solid #0f0;
+  border-radius: 8px;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+button {
+  padding: 10px 20px;
+  background: #0f3460;
+  border: 2px solid #0f0;
+  color: #0f0;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: all 0.2s;
+  width: 100%;
+}
+
+button:hover {
+  background: #0f0;
+  color: #0f3460;
+}
+
+.reset-btn {
+  background: #fe4f4f;
+  border-color: #fff;
+  color: #fff;
+}
+
+.reset-btn:hover {
+  background: #fff;
+  color: #fe4f4f;
+}
+

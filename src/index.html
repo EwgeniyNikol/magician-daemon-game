@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Magician vs Daemon</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="game">
+    <div class="character-card magician">
+      <h2>🧙 MAGICIAN</h2>
+      <div class="stat">
+        <span>Атака:</span>
+        <span class="attack-value" id="magicianAttack">100</span>
+      </div>
+      <div class="stat">
+        <span>Дурман:</span>
+        <span id="magicianStoned">❌</span>
+      </div>
+      <div class="calc" id="magicianCalc"></div>
+      <button id="magicianStonedBtn">🧪 Дурман мага</button>
+    </div>
+
+    <div class="grid-container">
+      <div class="rules">
+        ⚔️ M - выбрать мага | D - выбрать демона | Клик по клетке - переместить
+      </div>
+      <div class="grid" id="gameGrid"></div>
+      <div class="distance-info">
+        📏 Расстояние: <span id="distance">1</span>
+      </div>
+      <div class="controls">
+        <button id="resetBtn" class="reset-btn">🔄 Сбросить</button>
+      </div>
+    </div>
+
+    <div class="character-card daemon">
+      <h2>👿 DAEMON</h2>
+      <div class="stat">
+        <span>Атака:</span>
+        <span class="attack-value" id="daemonAttack">100</span>
+      </div>
+      <div class="stat">
+        <span>Дурман:</span>
+        <span id="daemonStoned">❌</span>
+      </div>
+      <div class="calc" id="daemonCalc"></div>
+      <button id="daemonStonedBtn">🧪 Дурман демона</button>
+    </div>
+  </div>
+
+  <script src="bundle.js"></script>
+</body>
+</html>
